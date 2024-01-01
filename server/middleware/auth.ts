@@ -3,6 +3,7 @@ import { CatchAsyncError } from "./catchAsyncError";
 import ErrorHandler from "../utils/ErrorHandler";
 import jwt, { JwtPayload } from "jsonwebtoken";
 import { redis } from "../utils/redis";
+import userModel from "../models/users.model";
 
 // authenticated user
 export const isAuthenticated = CatchAsyncError(
